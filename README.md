@@ -1,2 +1,25 @@
-# QR-Code-Location-Tracker
-Track IP location of clients once they scan a QR code (and force them to be on wifi  + not connected to a vpn)
+# Track QR-Codes by IP address geolocation
+
+This is the Repl for the template PHP Web Server of the site.
+
+This web server uses IP address locating to collect the data of the scanned QR-code locations. Since this site uses this locationing method this site does not have to ask the client for their location; however, this means that this site only get locations accurate to the city. This also means that the client has to connect to wifi in order for it to collect the most accurate data as possible.
+
+#### Example from the BigDQataCloud.com API output:
+```
+"ip": "96.35.37.111",
+"localityName": "St. Louis County",
+"isoPrincipalSubdivision": "Missouri",
+"isoAlpha3": "USA",
+"latitude": 38.56,
+"longitude": -90.53,
+```
+This, as well as some other common server-side file creation date and time data are all the data this site needs to collect to make this site work.
+## Google Maps API
+This site uses Google's javascript maps API in order to take the coordinates recieved from BigDataCloud's API in order to place those points on the map. *Google does not track your exact location.*
+
+#### Code input to Google's API:
+```
+//pin 1 vars
+var maponelat = <?= $maponephp->location->latitude; + x?>;
+var maponelong = <?= $maponephp->location->longitude + x ?>;
+```
