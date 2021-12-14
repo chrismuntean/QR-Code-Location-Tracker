@@ -2,8 +2,6 @@
 //once reached max num (10) rollback to 1 and delete all json data (even IF the 11th connection was cell)
 //in the unlikely event of the 7th connection was not valid no data will be collected and the site will display "This QR code has not been scanned yet :/"
 
-$maxlocatenum = file_get_contents("$locatenum.json");
-
 $locatenumreset = file_get_contents('locatenum.txt');
 if ($locatenumreset > 10) {
 		$locatenumreset = 1; //set the num to 1
