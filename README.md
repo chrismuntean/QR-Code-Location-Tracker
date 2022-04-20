@@ -1,8 +1,12 @@
 # Track QR-Codes by IP address geolocation
 
-This is the Repl for the template PHP Web Server of the site.
+Run your IP address in Repl here: https://swan-v04.chrismuntean.repl.co/getlocation.php
+See the list of collected locations here: https://swan-v04.chrismuntean.repl.co/index.php
 
-This web server uses IP address locating to collect the data of the scanned QR-code locations. Since this site uses this locationing method this site does not have to ask the client for their location; however, this means that this site only get locations accurate to the city. This also means that the client has to connect to wifi in order for it to collect the most accurate data as possible.
+This web server uses IP address locating to collect the data of the scanned QR-code locations. Since this site uses this locationing method this site does not have to ask the client for their location; however, this means that this site only get locations accurate to the city. This also means that the client has to connect to wifi in order for it to collect the most accurate data as possible. This server also has file managing that will reset, and delete the data so there will be no more that 10 connection data files at one time.
+
+BigData API: https://www.bigdatacloud.com/
+Google Maps JS API: https://developers.google.com/maps/documentation/javascript/overview
 
 #### Example from the BigDQataCloud.com API output:
 ```
