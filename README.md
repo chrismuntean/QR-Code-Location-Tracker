@@ -26,5 +26,5 @@ This site uses Google's javascript maps API in order to take the coordinates rec
 ```
 //pin 1 vars
 var maponelat = <?= $maponephp->location->latitude; + x?>;
-var maponelong = <?= $maponephp->location->longitude + x ?>;
+var maponelong = <?= $maponephp->location->longitude + x?>;
 ```
